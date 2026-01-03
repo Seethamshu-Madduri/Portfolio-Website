@@ -11,9 +11,42 @@ export const resumeData = {
         resumeLink: "https://drive.google.com/file/d/1QcJH9XudW5KmCySNDDN-qrflikeNaXhj/view?usp=sharing",
     },
     skills: [
-        { category: "Languages", items: ["Java", "Python", "JavaScript", "Kotlin", "HTML", "R"] },
-        { category: "Technologies & Tools", items: ["Git", "Android Studio", "Firebase", "MySQL Workbench", "Figma", "Canva", "Ubuntu", "OpenCV", "Numpy"] },
-        { category: "Core Concepts", items: ["Data Structures & Algorithms", "OOP", "Artificial Intelligence", "Machine Learning", "Computer Networks", "DBMS"] }
+        {
+            category: "Languages",
+            items: [
+                { name: "Java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+                { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+                { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+                { name: "Kotlin", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" },
+                { name: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+                { name: "R", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" }
+            ]
+        },
+        {
+            category: "Technologies & Tools",
+            items: [
+                { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+                { name: "Android Studio", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" },
+                { name: "Firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg" },
+                { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+                { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
+                { name: "Canva", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" },
+                { name: "Ubuntu", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" },
+                { name: "OpenCV", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" },
+                { name: "Numpy", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" }
+            ]
+        },
+        {
+            category: "Core Concepts",
+            items: [
+                { name: "DSA", icon: "https://img.icons8.com/ios-filled/50/ffffff/algorithm.png" },
+                { name: "OOP", icon: "https://img.icons8.com/ios-filled/50/ffffff/object-oriented-programming.png" },
+                { name: "AI", icon: "https://img.icons8.com/ios-filled/50/ffffff/artificial-intelligence.png" },
+                { name: "Machine Learning", icon: "https://img.icons8.com/ios-filled/50/ffffff/brain-simulation.png" },
+                { name: "Networks", icon: "https://img.icons8.com/ios-filled/50/ffffff/network.png" },
+                { name: "DBMS", icon: "https://img.icons8.com/ios-filled/50/ffffff/database.png" }
+            ]
+        }
     ],
     experience: [
         {

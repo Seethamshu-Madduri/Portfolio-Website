@@ -33,14 +33,24 @@ const Skills = () => {
                                 {skillGroup.category}
                             </h3>
                             <div className="flex flex-wrap justify-center gap-3">
-                                {skillGroup.items.map((skill, i) => (
-                                    <span
-                                        key={i}
-                                        className="px-4 py-2 bg-gray-800 text-blue-400 rounded-lg text-sm font-medium border border-gray-700"
-                                    >
-                                        {skill}
-                                    </span>
-                                ))}
+                                {skillGroup.items.map((skill, i) => {
+                                    const isObject = typeof skill === 'object';
+                                    const name = isObject ? skill.name : skill;
+                                    const icon = isObject ? skill.icon : null;
+
+                                    return (
+                                        <span
+                                            key={i}
+                                            className={`px-4 py-2 bg-gray-800 rounded-lg text-sm font-medium border flex items-center gap-2 transition-all hover:-translate-y-1 hover:shadow-lg ${isObject
+                                                    ? "border-red-500 text-white shadow-red-500/20"
+                                                    : "border-gray-700 text-blue-400"
+                                                }`}
+                                        >
+                                            {icon && <img src={icon} alt={name} className="w-5 h-5 object-contain" />}
+                                            {name}
+                                        </span>
+                                    );
+                                })}
                             </div>
                         </motion.div>
                     ))}
