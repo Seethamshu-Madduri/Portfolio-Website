@@ -37,14 +37,20 @@ export const resumeData = {
             ]
         },
         {
-            category: "Core Concepts",
+            category: "Courses",
             items: [
-                { name: "DSA", icon: "https://img.icons8.com/ios-filled/50/ffffff/algorithm.png" },
-                { name: "OOP", icon: "https://img.icons8.com/ios-filled/50/ffffff/object-oriented-programming.png" },
-                { name: "AI", icon: "https://img.icons8.com/ios-filled/50/ffffff/artificial-intelligence.png" },
-                { name: "Machine Learning", icon: "https://img.icons8.com/ios-filled/50/ffffff/brain-simulation.png" },
-                { name: "Networks", icon: "https://img.icons8.com/ios-filled/50/ffffff/network.png" },
-                { name: "DBMS", icon: "https://img.icons8.com/ios-filled/50/ffffff/database.png" }
+                { name: "Artificial Intelligence", icon: "https://img.icons8.com/ios-filled/50/ffffff/artificial-intelligence.png" },
+                { name: "Data Structures and Algorithms", icon: "https://img.icons8.com/ios-filled/50/ffffff/algorithm.png" },
+                { name: "Machine learning", icon: "https://img.icons8.com/ios-filled/50/ffffff/brain-simulation.png" },
+                { name: "Natural Language Processing", icon: "https://img.icons8.com/ios-filled/50/ffffff/brainstorm-skill.png" },
+                { name: "Computer Networks", icon: "https://img.icons8.com/ios-filled/50/ffffff/network.png" },
+                { name: "DBMS", icon: "https://img.icons8.com/ios-filled/50/ffffff/database.png" },
+                { name: "Prompt Engineering", icon: "https://img.icons8.com/ios-filled/50/ffffff/brain.png" },
+                { name: "Big Data Computing", icon: "https://img.icons8.com/ios-filled/50/ffffff/big-data.png" },
+                { name: "ETL Process", icon: "https://img.icons8.com/ios-filled/50/ffffff/process.png" },
+                { name: "Dashboard Building", icon: "https://img.icons8.com/ios-filled/50/ffffff/dashboard.png" },
+                { name: "Optimization Techniques", icon: "https://img.icons8.com/ios-filled/50/ffffff/performance.png" },
+                { name: "Computer Organization and Architecture", icon: "https://img.icons8.com/ios-filled/50/ffffff/motherboard.png" }
             ]
         }
     ],
