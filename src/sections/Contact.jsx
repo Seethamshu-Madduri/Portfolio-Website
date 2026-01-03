@@ -19,7 +19,7 @@ const Contact = () => {
                     </h2>
                     <div className="w-20 h-1 bg-primary mx-auto mb-8"></div>
                     <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                        I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                        I'm currently looking for new opportunities. Whether you have a question or just want to say hi, feel free to reach out to me!
                     </p>
                 </motion.div>
 
