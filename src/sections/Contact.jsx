@@ -5,7 +5,7 @@ import { Mail, Phone, MapPin, Send } from "lucide-react";
 
 const Contact = () => {
     return (
-        <section id="contact" className="py-20 bg-white dark:bg-gray-900 transition-colors">
+        <section id="contact" className="py-20 bg-black transition-colors">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -23,7 +23,7 @@ const Contact = () => {
                     </p>
                 </motion.div>
 
-                <div className="max-w-4xl mx-auto bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+                <div className="max-w-4xl mx-auto bg-gray-900 rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row border border-gray-800">
                     {/* Contact Info */}
                     <div className="w-full md:w-5/12 bg-primary p-8 text-white flex flex-col justify-between">
                         <div>
@@ -66,20 +66,20 @@ const Contact = () => {
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 <div>
                                     <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">First Name</label>
-                                    <input type="text" className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="John" />
+                                    <input type="text" className="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="John" />
                                 </div>
                                 <div>
                                     <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Last Name</label>
-                                    <input type="text" className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="Doe" />
+                                    <input type="text" className="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="Doe" />
                                 </div>
                             </div>
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email Address</label>
-                                <input type="email" className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="john@example.com" />
+                                <input type="email" className="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="john@example.com" />
                             </div>
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Message</label>
-                                <textarea rows="4" className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="Your message here..."></textarea>
+                                <textarea rows="4" className="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="Your message here..."></textarea>
                             </div>
 
                             <button className="w-full py-3 px-6 bg-primary text-white font-medium rounded-lg hover:bg-blue-600 transition-colors shadow-lg flex items-center justify-center gap-2">

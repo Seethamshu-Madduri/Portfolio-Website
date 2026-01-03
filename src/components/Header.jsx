@@ -28,15 +28,15 @@ const Header = () => {
 
     return (
         <nav
-            className={`fixed w-full z-50 transition-all duration-300 ${isScrolled
-                ? "bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg"
-                : "bg-transparent"
+            className={`fixed w-full z-50 transition-all duration-300 top-0 left-0 ${isScrolled
+                ? "bg-black/90 backdrop-blur-md shadow-lg"
+                : "bg-black/50 backdrop-blur-sm"
                 }`}
         >
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="w-full px-6">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex-shrink-0">
-                        <a href="#" className="text-2xl font-bold text-primary dark:text-blue-400">
+                        <a href="#" className="text-lg font-bold text-white tracking-wide uppercase font-tech hover:text-primary transition-colors">
                             Portfolio
                         </a>
                     </div>
@@ -58,7 +58,7 @@ const Header = () => {
                                     href={resumeData.personalInfo.resumeLink}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="bg-primary hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors shadow-md"
+                                    className="bg-primary hover:bg-blue-600 hover:shadow-lg text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 transform hover:-translate-y-0.5"
                                 >
                                     Resume
                                 </a>

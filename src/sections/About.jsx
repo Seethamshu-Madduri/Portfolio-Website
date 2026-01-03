@@ -5,7 +5,7 @@ import { MapPin, Mail, Phone } from "lucide-react";
 
 const About = () => {
     return (
-        <section id="about" className="py-20 bg-white dark:bg-gray-900 transition-colors">
+        <section id="about" className="py-20 bg-black transition-colors">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -43,8 +43,8 @@ const About = () => {
 
                     <div className="relative">
                         <div className="absolute inset-0 bg-primary/10 rounded-2xl transform rotate-3 translate-x-2 translate-y-2"></div>
-                        <div className="relative bg-gray-50 dark:bg-gray-800 p-8 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-700">
-                            <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Education</h3>
+                        <div className="relative bg-gray-900 p-8 rounded-2xl shadow-xl border border-gray-800">
+                            <h3 className="text-xl font-semibold mb-4 text-white">Education</h3>
                             <div className="space-y-6">
                                 {resumeData.education.map((edu, index) => (
                                     <div key={index} className="border-l-2 border-primary pl-4">

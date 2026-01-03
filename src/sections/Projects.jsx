@@ -5,7 +5,7 @@ import { Github, ExternalLink, Code } from "lucide-react";
 
 const Projects = () => {
     return (
-        <section id="projects" className="py-20 bg-white dark:bg-gray-900 transition-colors">
+        <section id="projects" className="py-20 bg-black transition-colors">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -28,7 +28,7 @@ const Projects = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: index * 0.1 }}
-                            className="group bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-700 hover:-translate-y-2 transition-all duration-300 flex flex-col"
+                            className="group bg-gray-900 rounded-xl overflow-hidden shadow-lg border border-gray-800 transition-all duration-300 ease-in-out hover:-translate-y-[6px] hover:shadow-[0_12px_30px_rgba(0,0,0,0.12)] flex flex-col"
                         >
                             {/* Fallback image or project category banner */}
                             <div className="h-48 bg-gradient-to-tr from-blue-500 to-indigo-600 flex items-center justify-center relative overflow-hidden">
@@ -51,7 +51,7 @@ const Projects = () => {
                                     {project.techStack.map((tech, i) => (
                                         <span
                                             key={i}
-                                            className="text-xs px-2 py-1 bg-white dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded border border-gray-200 dark:border-gray-600"
+                                            className="text-xs px-2 py-1 bg-gray-800 text-gray-300 rounded border border-gray-700"
                                         >
                                             {tech}
                                         </span>
@@ -61,7 +61,7 @@ const Projects = () => {
                                 <div className="flex gap-4 pt-4 border-t border-gray-200 dark:border-gray-700">
                                     <a
                                         href="#"
-                                        className="relative px-4 py-2 rounded-lg font-medium text-sm text-gray-700 dark:text-gray-300 bg-gray-200 dark:bg-gray-700 overflow-hidden group/btn shadow-sm"
+                                        className="relative px-4 py-2 rounded-lg font-medium text-sm text-gray-300 bg-gray-800 overflow-hidden group/btn shadow-sm"
                                     >
                                         <div className="absolute inset-0 w-full h-full bg-primary transform -translate-x-full group-hover/btn:translate-x-0 transition-transform duration-300 ease-out"></div>
                                         <span className="relative flex items-center group-hover/btn:text-white transition-colors duration-300">
@@ -71,7 +71,7 @@ const Projects = () => {
                                     </a>
                                     <a
                                         href="#"
-                                        className="relative px-4 py-2 rounded-lg font-medium text-sm text-gray-700 dark:text-gray-300 bg-gray-200 dark:bg-gray-700 overflow-hidden group/btn shadow-sm"
+                                        className="relative px-4 py-2 rounded-lg font-medium text-sm text-gray-300 bg-gray-800 overflow-hidden group/btn shadow-sm"
                                     >
                                         <div className="absolute inset-0 w-full h-full bg-primary transform -translate-x-full group-hover/btn:translate-x-0 transition-transform duration-300 ease-out"></div>
                                         <span className="relative flex items-center group-hover/btn:text-white transition-colors duration-300">

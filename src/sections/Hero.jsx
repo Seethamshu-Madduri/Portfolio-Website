@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <section
             id="hero"
-            className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-slate-900 overflow-hidden"
+            className="min-h-screen flex items-center justify-center relative bg-black overflow-hidden"
         >
             {/* Background decoration */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
@@ -21,26 +21,18 @@ const Hero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <h2 className="text-xl md:text-2xl font-medium text-primary mb-4">
-                        Hello, I'm
+                    <h2 className="text-2xl md:text-4xl font-medium text-primary mb-4">
+                        Greetings! I am
                     </h2>
-                    <div className="relative inline-block mb-6">
-                        <motion.h1
-                            initial={{ opacity: 0.1, backgroundPosition: "0% 50%" }}
-                            animate={{ opacity: 1, backgroundPosition: "100% 50%" }}
-                            transition={{ duration: 1.5, ease: "easeInOut", delay: 0.3 }}
-                            className="text-5xl md:text-7xl font-bold tracking-tight font-tech text-transparent bg-clip-text bg-gradient-to-r from-gray-500 via-gray-900 to-gray-500 dark:from-gray-400 dark:via-white dark:to-gray-400 bg-300%"
-                        >
-                            {resumeData.personalInfo.name}
-                        </motion.h1>
-                        <motion.div
-                            initial={{ scaleX: 0, originX: 0 }}
-                            animate={{ scaleX: [0, 1, 1, 0], originX: ["0%", "0%", "100%", "100%"] }}
-                            transition={{ duration: 1.5, ease: "easeInOut", times: [0, 0.4, 0.6, 1] }}
-                            className="absolute inset-0 bg-primary/20 dark:bg-blue-500/20 z-10"
-                        />
-                    </div>
-                    <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8">
+                    <motion.h1
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+                        className="text-5xl md:text-7xl font-bold tracking-tight font-tech mb-10 text-transparent bg-clip-text bg-gradient-to-r from-gray-500 via-gray-900 to-gray-500 dark:from-gray-400 dark:via-white dark:to-gray-400 bg-300%"
+                    >
+                        {resumeData.personalInfo.name}
+                    </motion.h1>
+                    <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto mb-8 md:whitespace-nowrap">
                         {resumeData.personalInfo.role}
                     </p>
 

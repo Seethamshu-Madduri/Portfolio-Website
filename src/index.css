@@ -5,7 +5,7 @@
 
 @layer base {
   body {
-    @apply bg-white text-gray-900 dark:bg-gray-950 dark:text-white transition-colors duration-300;
+    @apply bg-black text-white transition-colors duration-300;
   }
 }
 
@@ -33,4 +33,52 @@
 
 .dark ::-webkit-scrollbar-thumb:hover {
   background: #475569;
+}
+
+/* Kukuri Animation Effect */
+.kukuri-wrapper {
+  position: relative;
+  display: inline-block;
+  color: #1f2937;
+  /* Gray-900 */
+  overflow: hidden;
+}
+
+.dark .kukuri-wrapper {
+  color: #ffffff;
+}
+
+.kukuri-wrapper::after {
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  top: 50%;
+  margin-top: -10px;
+  right: 0;
+  background: #3b82f6;
+  /* Blue-500 */
+  transform: translate3d(-100%, 0, 0);
+  transition: transform 0.4s;
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.kukuri-wrapper:hover::after {
+  transform: translate3d(100%, 0, 0);
+}
+
+.kukuri-wrapper::before {
+  content: attr(data-letters);
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+  color: #3b82f6;
+  /* Hover text color */
+  white-space: nowrap;
+  width: 0%;
+  transition: width 0.4s 0.3s;
+}
+
+.kukuri-wrapper:hover::before {
+  width: 100%;
 }

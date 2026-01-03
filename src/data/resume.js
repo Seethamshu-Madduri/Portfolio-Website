@@ -1,7 +1,7 @@
 export const resumeData = {
     personalInfo: {
         name: "Seethamshu Madduri",
-        role: "Computer Science Student & Software Developer",
+        role: "Computer Science Graduate | Building Practical and Scalable Software",
         summary: "A dedicated and results-oriented 3rd-year BTech Computer Science student with a strong foundation in Java programming, Data Structures and Algorithms (DSA), and Object-Oriented Programming (OOP). Passionate for solving complex problems efficiently, writing clean, maintainable code, and building scalable solutions.",
         email: "maddurianshu@gmail.com",
         phone: "9959942888",
@@ -17,17 +17,24 @@ export const resumeData = {
     ],
     experience: [
         {
+            role: "SAP Intern",
+            company: "Infor Tech PVT LTD",
+            duration: "Dec 2024 - Jan 2025",
+            description: "Part of the Infor Birst team active in building efficient data reports and dashboards for clients using ETL processes. Managed and extracted readable data from raw datasets using SQL queries."
+        },
+        {
+            role: "Team Lead",
+            company: "Great India Hackfest 2024",
+            duration: "2024",
+            description: "Led a team effort for a 48-hour coding hackathon to create a responsive and interactive prototype for a social cause. The app facilitated food delivery from restaurants to the needy on the streets."
+        },
+        {
             role: "Vice-President",
             company: "Innovators Quest Club, VIT-AP",
             duration: "Oct 2023 - May 2024",
             description: "Led and coordinated technical events including workshops and hackathons. Mentored club members and managed event planning, budgeting, and team coordination."
         },
-        {
-            role: "Technical Team Member",
-            company: "Innovators Quest Club, VIT-AP",
-            duration: "Jan 2023 - June 2023",
-            description: "Contributed to the technical team and provided insights for various problem-solving DSA questions."
-        }
+
     ],
     projects: [
         {
