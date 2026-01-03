@@ -28,22 +28,22 @@ const Projects = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: index * 0.1 }}
-                            className="bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-700 hover:-translate-y-2 transition-transform duration-300 flex flex-col"
+                            className="group bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-700 hover:-translate-y-2 transition-all duration-300 flex flex-col"
                         >
                             {/* Fallback image or project category banner */}
-                            <div className="h-48 bg-gradient-to-tr from-blue-500 to-indigo-600 flex items-center justify-center relative overflow-hidden group">
-                                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
-                                <Code className="text-white w-12 h-12 opacity-80" />
+                            <div className="h-48 bg-gradient-to-tr from-blue-500 to-indigo-600 flex items-center justify-center relative overflow-hidden">
+                                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500"></div>
+                                <Code className="text-white w-12 h-12 opacity-80 group-hover:scale-110 transition-transform duration-500" />
                                 <span className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm text-white text-xs px-3 py-1 rounded-full border border-white/30">
                                     {project.category}
                                 </span>
                             </div>
 
-                            <div className="p-6 flex flex-col flex-grow">
-                                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                            <div className="p-6 flex flex-col flex-grow relative">
+                                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-primary transition-colors duration-300">
                                     {project.title}
                                 </h3>
-                                <p className="text-gray-600 dark:text-gray-300 text-sm mb-6 flex-grow">
+                                <p className="text-gray-600 dark:text-gray-300 text-sm mb-6 flex-grow opacity-80 group-hover:opacity-100 transition-opacity duration-300">
                                     {project.description}
                                 </p>
 
@@ -59,20 +59,25 @@ const Projects = () => {
                                 </div>
 
                                 <div className="flex gap-4 pt-4 border-t border-gray-200 dark:border-gray-700">
-                                    {/* Since actual links aren't provided, we'll keep placeholders behaving as static buttons for now if empty */}
                                     <a
                                         href="#"
-                                        className="flex items-center text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-blue-400 transition-colors"
+                                        className="relative px-4 py-2 rounded-lg font-medium text-sm text-gray-700 dark:text-gray-300 bg-gray-200 dark:bg-gray-700 overflow-hidden group/btn shadow-sm"
                                     >
-                                        <Github className="w-4 h-4 mr-2" />
-                                        Code
+                                        <div className="absolute inset-0 w-full h-full bg-primary transform -translate-x-full group-hover/btn:translate-x-0 transition-transform duration-300 ease-out"></div>
+                                        <span className="relative flex items-center group-hover/btn:text-white transition-colors duration-300">
+                                            <Github className="w-4 h-4 mr-2" />
+                                            Code
+                                        </span>
                                     </a>
                                     <a
                                         href="#"
-                                        className="flex items-center text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-blue-400 transition-colors"
+                                        className="relative px-4 py-2 rounded-lg font-medium text-sm text-gray-700 dark:text-gray-300 bg-gray-200 dark:bg-gray-700 overflow-hidden group/btn shadow-sm"
                                     >
-                                        <ExternalLink className="w-4 h-4 mr-2" />
-                                        Demo
+                                        <div className="absolute inset-0 w-full h-full bg-primary transform -translate-x-full group-hover/btn:translate-x-0 transition-transform duration-300 ease-out"></div>
+                                        <span className="relative flex items-center group-hover/btn:text-white transition-colors duration-300">
+                                            <ExternalLink className="w-4 h-4 mr-2" />
+                                            Demo
+                                        </span>
                                     </a>
                                 </div>
                             </div>

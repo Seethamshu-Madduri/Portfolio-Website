@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import ThemeToggle from "./ThemeToggle";
 import useTheme from "../hooks/useTheme";
+import { resumeData } from "../data/resume";
 
 const navLinks = [
     { name: "About", href: "#about" },
@@ -54,7 +55,7 @@ const Header = () => {
                             ))}
                             <div className="ml-4">
                                 <a
-                                    href="#"
+                                    href={resumeData.personalInfo.resumeLink}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="bg-primary hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors shadow-md"
@@ -102,7 +103,7 @@ const Header = () => {
                                 </a>
                             ))}
                             <a
-                                href="#"
+                                href={resumeData.personalInfo.resumeLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 onClick={() => setIsOpen(false)}

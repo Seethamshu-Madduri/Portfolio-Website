@@ -7,11 +7,14 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
-        colors: {
-            primary: "#3b82f6", // Example primary
-            dark: "#0f172a",    // Slate 900
-            light: "#f8fafc",   // Slate 50
-        }
+      colors: {
+        primary: "#3b82f6", // Example primary
+        dark: "#0f172a",    // Slate 900
+        light: "#f8fafc",   // Slate 50
+      },
+      fontFamily: {
+        tech: ['"Space Grotesk"', 'sans-serif'],
+      }
     },
   },
   plugins: [],

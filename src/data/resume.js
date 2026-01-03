@@ -8,6 +8,7 @@ export const resumeData = {
         location: "Hyderabad, Telangana",
         linkedin: "", // Not provided
         github: "", // Not provided
+        resumeLink: "https://drive.google.com/file/d/1QcJH9XudW5KmCySNDDN-qrflikeNaXhj/view?usp=sharing",
     },
     skills: [
         { category: "Languages", items: ["Java", "Python", "JavaScript", "Kotlin", "HTML", "R"] },

@@ -24,9 +24,14 @@ const Hero = () => {
                     <h2 className="text-xl md:text-2xl font-medium text-primary mb-4">
                         Hello, I'm
                     </h2>
-                    <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6 tracking-tight">
+                    <motion.h1
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 1, ease: "easeOut" }}
+                        className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6 tracking-tight font-tech bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-400"
+                    >
                         {resumeData.personalInfo.name}
-                    </h1>
+                    </motion.h1>
                     <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8">
                         {resumeData.personalInfo.role}
                     </p>
