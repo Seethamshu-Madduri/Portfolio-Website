@@ -66,17 +66,17 @@ export const resumeData = {
         {
             degree: "B.Tech in Computer Science and Engineering",
             institution: "VIT-AP University",
-            duration: "Pursuing (3rd Year)"
+            duration: "4th Year Graduate"
         },
         {
             degree: "Intermediate (TSBIE)",
             institution: "Nine Education Academy, Hyderabad",
-            duration: "Completed (88%)"
+            duration: "Completed"
         },
         {
             degree: "High School (ICSE)",
             institution: "Johnson Grammar School, Hyderabad",
-            duration: "Completed (82%)"
+            duration: "Completed"
         }
     ]
 };

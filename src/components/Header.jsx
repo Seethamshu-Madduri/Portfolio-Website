@@ -53,6 +53,16 @@ const Header = () => {
                                 </a>
                             ))}
                             <div className="ml-4">
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-primary hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors shadow-md"
+                                >
+                                    Resume
+                                </a>
+                            </div>
+                            <div className="ml-4">
                                 <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
                             </div>
                         </div>
@@ -91,6 +101,15 @@ const Header = () => {
                                     {link.name}
                                 </a>
                             ))}
+                            <a
+                                href="#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={() => setIsOpen(false)}
+                                className="text-primary font-medium block px-3 py-2 rounded-md text-base"
+                            >
+                                Resume
+                            </a>
                         </div>
                     </motion.div>
                 )}
